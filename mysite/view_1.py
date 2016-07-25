@@ -2,7 +2,7 @@
 
 #from django.template.loader import get_template
 #from django.template import Context
-#from django.http import HttpResponse
+from django.http import HttpResponse
 from django.shortcuts import render_to_response
 
 def user_info(request):
@@ -13,6 +13,3 @@ def user_info(request):
     #html = t.render(Context(locals()))
     #return HttpResponse(html)
     return render_to_response('user_info.html',locals())
-
-
-

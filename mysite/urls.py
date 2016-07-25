@@ -17,9 +17,11 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf.urls import include
 from mysite.view_1 import user_info
+from mysite.cookies import cookies
 
 urlpatterns = [
     url(r'^u/$',user_info),
+    url(r'^$',cookies),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
 ]
