@@ -11,6 +11,14 @@ python manage.py startapp login
 python manage.py migrate
 python manage.py createsuperuser
 
+前言
+1、关联包安装
+# yum install python-pip
+# yum install mysql*
+# yum install python-devel
+# pip install MySQLdb
+# pip install pexpect
+
 一、用户登录
 1、创建App login
 # python manage.py startapp login
