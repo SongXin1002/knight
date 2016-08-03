@@ -1,7 +1,6 @@
 from django.http import HttpResponse
-from MySQL.models import songxin
+from MySQL.models import testuser
 
 def index(request):
-    test = songxin.objects.all()
-    test_str = test(sex = "man")
-    return HttpResponse(test_str)
+    test = testuser.objects.get_or_create(name = 'songxin')[0]
+    return HttpResponse(test)

@@ -19,6 +19,7 @@ from django.conf.urls import include
 from mysite.view_1 import user_info
 from mysite.view import index
 from mysite.cookies import cookies
+from WebLog.views import WebLog
 
 urlpatterns = [
     url(r'^index/$',index),
@@ -26,4 +27,5 @@ urlpatterns = [
     url(r'^$',cookies),
     url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
+    url(r'^background/', WebLog),
 ]
